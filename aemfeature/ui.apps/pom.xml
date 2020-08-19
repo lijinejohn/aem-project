@@ -100,13 +100,13 @@
                             <target>/apps/aemfeature/install</target>
                         </embedded>
                     </embeddeds>
-                    <subPackages>
+                    <!-- <subPackages>
                         <subPackage>
                             <groupId>com.adobe.cq</groupId>
                             <artifactId>core.wcm.components.all</artifactId>
                             <filter>true</filter>
                         </subPackage>
-                    </subPackages>
+                    </subPackages>  -->	
                 </configuration>
             </plugin>
 

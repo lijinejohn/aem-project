@@ -3,4 +3,4 @@
     jcr:primaryType="cq:Component"
     jcr:title="touch component 1"
     sling:resourceSuperType="foundation/components/parbase"
-    componentGroup="Experience AEM"/>
+    componentGroup="aemfeature"/>

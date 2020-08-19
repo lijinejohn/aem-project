@@ -4,4 +4,4 @@
     jcr:title="Dynamic component"
     sling:resourceSuperType="foundation/components/parbase"
     allowedParents="[*/parsys]"
-    componentGroup="Experience AEM"/>
+    componentGroup="aemfeature"/>
