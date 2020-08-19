@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+	xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+	xmlns:cq="http://www.day.com/jcr/cq/1.0"
+	xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+	jcr:primaryType="nt:unstructured" jcr:title="Touch component 1"
+	sling:resourceType="cq/gui/components/authoring/dialog" height="500">
+	<content jcr:primaryType="nt:unstructured"
+		sling:resourceType="granite/ui/components/coral/foundation/container">
+		<items jcr:primaryType="nt:unstructured">
+			<tabs jcr:primaryType="nt:unstructured"
+				sling:resourceType="granite/ui/components/coral/foundation/tabs"
+				maximized="{Boolean}true">
+				<items jcr:primaryType="nt:unstructured">
+					<properties jcr:primaryType="nt:unstructured"
+						jcr:title="Properties"
+						sling:resourceType="granite/ui/components/coral/foundation/container"
+						margin="{Boolean}true">
+						<items jcr:primaryType="nt:unstructured">
+							<columns jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+								margin="{Boolean}true">
+								<items jcr:primaryType="nt:unstructured">
+									<column granite:class="cq-RichText-FixedColumn-column"
+										jcr:primaryType="nt:unstructured"
+										sling:resourceType="granite/ui/components/coral/foundation/container">
+										<items jcr:primaryType="nt:unstructured">
+											<title jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+												fieldDescription="Leave empty to use the page title."
+												fieldLabel="Title" name="./title" />
+											<titleOption jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/coral/foundation/form/select"
+												emptyText="Select Title"
+												fieldDescription="Please select the title from the given option"
+												fieldLabel="Select Title" name="./titleOption">
+												<items jcr:primaryType="nt:unstructured">
+													<titleMr jcr:primaryType="nt:unstructured"
+														text="Mr" value="titleMr" />
+													<titleMrs jcr:primaryType="nt:unstructured"
+														text="Mrs" value="titleMrs" />
+													<titleDr jcr:primaryType="nt:unstructured"
+														text="Doctor" value="titleDr" />
+													<titleRev jcr:primaryType="nt:unstructured"
+														text="Rev" value="titleRev" />
+												</items>
+											</titleOption>
+											<checkboxEnable
+												jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/foundation/form/checkbox"
+												fieldDescription="Please check on the box to enable"
+												name="./checkboxEnable" text="Please select to enable"
+												value="true" />
+											<numberOption jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/foundation/form/numberfield"
+												fieldDescription="Leave empty to use the page title."
+												fieldLabel="number option" max="10" min="1"
+												name="./numberOption" step="1" />
+											<pathField jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+												fieldDescription="Leave empty to use the page title."
+												fieldLabel="Link to the page" name="./pathField"
+												rootPath="/content/" step="1" />
+											<longDescriptionText
+												jcr:primaryType="nt:unstructured"
+												sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+												fieldDescription="Sets the description that appears on the profiled person's page."
+												fieldLabel="Long Description*" name="./longDescriptionText"
+												required="true" useFixedInlineToolbar="{Boolean}true">
+												<rtePlugins jcr:primaryType="nt:unstructured">
+													<format jcr:primaryType="nt:unstructured"
+														features="*" />
+													<justify jcr:primaryType="nt:unstructured"
+														features="*" />
+													<lists jcr:primaryType="nt:unstructured" features="*" />
+													<paraformat jcr:primaryType="nt:unstructured"
+														features="*" />
+													<links jcr:primaryType="nt:unstructured" features="*" />
+													<image jcr:primaryType="nt:unstructured" features="*" />
+													<findreplace jcr:primaryType="nt:unstructured"
+														features="*" />
+													<subsuperscript
+														jcr:primaryType="nt:unstructured" features="*" />
+													<spellcheck jcr:primaryType="nt:unstructured"
+														features="*" />
+													<misctools jcr:primaryType="nt:unstructured"
+														features="*">
+														<specialCharsConfig
+															jcr:primaryType="nt:unstructured">
+															<chars jcr:primaryType="nt:unstructured">
+																<copyright jcr:primaryType="nt:unstructured"
+																	entity="&amp;#169;" />
+																<trademark jcr:primaryType="nt:unstructured"
+																	entity="&amp;#8482;" />
+																<registered jcr:primaryType="nt:unstructured"
+																	entity="&amp;#174;" />
+																<emDash jcr:primaryType="nt:unstructured"
+																	entity="&amp;#8212;" />
+																<pound jcr:primaryType="nt:unstructured"
+																	entity="&amp;#163;" />
+																<nbsp jcr:primaryType="nt:unstructured"
+																	entity="&amp;#160;" />
+															</chars>
+														</specialCharsConfig>
+													</misctools>
+													<styles jcr:primaryType="nt:unstructured"
+														features="*">
+														<styles jcr:primaryType="nt:unstructured">
+															<plainSpan jcr:primaryType="nt:unstructured"
+																cssName="defaultSpan" text="Default (add span tag)" />
+															<lead jcr:primaryType="nt:unstructured"
+																cssName="lead" text="Lead" />
+														</styles>
+													</styles>
+													<table jcr:primaryType="nt:unstructured" features="*" />
+												</rtePlugins>
+											</longDescriptionText>
+											<backgroundColor
+												jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+												showDefaultColors="{Boolean}false" text="Background Color"
+												fieldLabel="Background Color" name="./backgroundColor"
+												showProperties="{Boolean}false">
+												<items jcr:primaryType="nt:unstructured">
+													<white jcr:primaryType="nt:unstructured"
+														value="#FFFFFF" />
+													<black jcr:primaryType="nt:unstructured"
+														value="#000000" />
+													<hugo-blue jcr:primaryType="nt:unstructured"
+														value="#D8F1FF" />
+													<hugo-brown jcr:primaryType="nt:unstructured"
+														value="#451A0C" />
+													<hugo-cream jcr:primaryType="nt:unstructured"
+														value="#F6F6EC" />
+													<hugo-green jcr:primaryType="nt:unstructured"
+														value="#AECDC7" />
+													<hugo-gray jcr:primaryType="nt:unstructured"
+														value="#3C3C3C" />
+												</items>
+											</backgroundColor>
+											<alignment jcr:primaryType="nt:unstructured"
+												name="./alignChildren" fieldLabel="Alignment of components"
+												required="{Boolean}true" selectionMode="single"
+												sling:resourceType="granite/ui/components/coral/foundation/form/buttongroup">
+
+												<items jcr:primaryType="nt:unstructured">
+													<default jcr:primaryType="nt:unstructured"
+														name="./default" text="Default" value="false"
+														cq-msm-lockable="default" />
+													<left jcr:primaryType="nt:unstructured" name="./left"
+														text="Left" value="left" cq-msm-lockable="left" />
+													<center jcr:primaryType="nt:unstructured"
+														name="./center" text="Center" value="center"
+														cq-msm-lockable="center" />
+													<right jcr:primaryType="nt:unstructured"
+														name="./right" text="Right" value="right"
+														cq-msm-lockable="right" />
+												</items>
+											</alignment>
+											<headlines jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/foundation/form/multifield"
+												fieldDescription="Click 'Add field' to add new content dropdown."
+												fieldLabel="Headlines">
+												<field jcr:primaryType="nt:unstructured"
+													sling:resourceType="granite/ui/components/foundation/form/textfield"
+													required="true" name="./headlines" />
+											</headlines>
+											<info jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/foundation/text"
+												text="Please note that this component is not to be used to include JavaScript or CSS." />
+											<html jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/foundation/form/textarea"
+												fieldLabel="HTML" name="./html" required="true" />
+												
+										</items>
+									</column>
+								</items>
+							</columns>
+						</items>
+					</properties>
+					<layout jcr:primaryType="nt:unstructured" jcr:title="Layout"
+						sling:resourceType="granite/ui/components/coral/foundation/container"
+						margin="{Boolean}true">
+						<items jcr:primaryType="nt:unstructured">
+							<columns jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+								margin="{Boolean}true">
+								<items jcr:primaryType="nt:unstructured">
+									<column granite:class="cq-RichText-FixedColumn-column"
+										jcr:primaryType="nt:unstructured"
+										sling:resourceType="granite/ui/components/coral/foundation/container">
+										<items jcr:primaryType="nt:unstructured">
+											<paddingtop jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/coral/foundation/form/select"
+												emptyText="Select Padding"
+												fieldDescription="Padding on top of the columns"
+												fieldLabel="Padding Top" name="./paddingtop">
+												<items jcr:primaryType="nt:unstructured">
+													<paddingtop0 jcr:primaryType="nt:unstructured"
+														text="None" value="paddingtop0" />
+													<paddingtop15
+														jcr:primaryType="nt:unstructured" text="Small"
+														value="paddingtop15" />
+													<paddingtop30
+														jcr:primaryType="nt:unstructured" text="Medium"
+														value="paddingtop30" />
+													<paddingtop60
+														jcr:primaryType="nt:unstructured" text="Large"
+														value="paddingtop60" />
+												</items>
+											</paddingtop>
+											<paddingbottom
+												jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/coral/foundation/form/select"
+												emptyText="Select Padding"
+												fieldDescription="Padding on bottom of the columns"
+												fieldLabel="Padding Bottom" name="./paddingbottom">
+												<items jcr:primaryType="nt:unstructured">
+													<paddingbottom0
+														jcr:primaryType="nt:unstructured" text="None"
+														value="paddingbottom0" />
+													<paddingbottom15
+														jcr:primaryType="nt:unstructured" text="Small"
+														value="paddingbottom15" />
+													<paddingbottom30
+														jcr:primaryType="nt:unstructured" text="Medium"
+														value="paddingbottom30" />
+													<paddingbottom60
+														jcr:primaryType="nt:unstructured" text="Large"
+														value="paddingbottom60" />
+												</items>
+											</paddingbottom>
+											<fixedFirstCol
+												jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+												checked="${not empty cqDesign.isFixedCol ? cqDesign.isFixedCol : false}"
+												fieldDescription="Tick to fix first Column"
+												name="./isFixedCol" text="Tick to fix first Column"
+												uncheckedValue="false" value="{Boolean}true" />
+											<fixedFirstRow
+												jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+												checked="${not empty cqDesign.isFixedRow ? cqDesign.isFixedRow : false}"
+												fieldDescription="Tick to fix first Row" name="./isFixedRow"
+												text="Tick to fix first Row" uncheckedValue="false"
+												value="{Boolean}true" />
+										</items>
+									</column>
+								</items>
+							</columns>
+						</items>
+					</layout>
+				</items>
+			</tabs>
+		</items>
+	</content>
+</jcr:root>
