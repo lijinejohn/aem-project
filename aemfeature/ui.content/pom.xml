@@ -23,7 +23,7 @@
     <parent>
         <groupId>aemfeature</groupId>
         <artifactId>aemfeature</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${aem-feature-project-version}</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
