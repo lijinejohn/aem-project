@@ -325,12 +325,12 @@
         <dependency>
             <groupId>aemfeature</groupId>
             <artifactId>aemfeature.it.tests</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${aem-feature-project-version}</version>
         </dependency>
         <dependency>
             <groupId>aemfeature</groupId>
             <artifactId>aemfeature.core</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${aem-feature-project-version}</version>
         </dependency>
     </dependencies>
 </project>
