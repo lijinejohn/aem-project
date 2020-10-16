@@ -31,7 +31,7 @@
     </modules>
 
     <properties>
-		<aem-feature-project-version>2020.10.16.2</aem-feature-project-version>
+		<aem-feature-project-version>2020.10.16.10</aem-feature-project-version>
         <aem.host>localhost</aem.host>
         <aem.port>8094</aem.port>
         <aem.publish.host>localhost</aem.publish.host>
@@ -485,6 +485,12 @@
                 <classifier>apis</classifier>
                 <scope>provided</scope>
             </dependency>
+            <dependency>
+		       <groupId>org.apache.geronimo.specs</groupId>
+		       <artifactId>geronimo-atinject_1.0_spec</artifactId>
+		       <version>1.0</version>
+		       <scope>provided</scope>
+		    </dependency>
             <dependency>
                 <groupId>com.adobe.cq</groupId>
                 <artifactId>core.wcm.components.all</artifactId>
