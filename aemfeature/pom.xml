@@ -25,13 +25,13 @@
     <modules>
         <module>core</module>
         <module>ui.apps</module>
-        <module>ui.content</module>
+        <!-- <module>ui.content</module>  -->
         <module>it.tests</module>
         <module>it.launcher</module>
     </modules>
 
     <properties>
-		<aem-feature-project-version>2020.11.7.6</aem-feature-project-version>
+		<aem-feature-project-version>2020.11.12.2</aem-feature-project-version>
         <aem.host>localhost</aem.host>
         <aem.port>8094</aem.port>
         <aem.publish.host>localhost</aem.publish.host>
